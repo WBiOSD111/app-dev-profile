@@ -9,7 +9,7 @@
 
 Second of many apps created by following the [iOS 12 & Swift 4: From Beginner to Paid Professional](https://www.udemy.com/devslopes-ios12/learn/v4/content) course on Udemy by Mark Price.
 
-<img alt="profile-iPhone-screen" src="profile-iPhone.jpg" width="200"><img alt="profile-iPad-screen" src="profile-iPad.png" width="400">
+<img alt="profile-iPhone-screen" src="profile-iPhone.jpg" width="200"><img alt="profile-iPad-screen" src="profile-iPad.png" width="300">
 
 ## Features
 
