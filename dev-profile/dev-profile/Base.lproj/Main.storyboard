@@ -20,20 +20,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Devslopes BG - June 2017-1920x1080" translatesAutoresizingMaskIntoConstraints="NO" id="BlF-3p-kek">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="150"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="200"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="6pq-X2-HKm"/>
                                     <constraint firstAttribute="height" constant="150" id="m6f-vG-1UX"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="6pq-X2-HKm"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="6pq-X2-HKm"/>
+                                        <exclude reference="m6f-vG-1UX"/>
+                                    </mask>
+                                </variation>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="devslopesProfileLogo" translatesAutoresizingMaskIntoConstraints="NO" id="2Qh-fL-fc7" customClass="ProfileImage" customModule="dev_profile" customModuleProvider="target">
-                                <rect key="frame" x="16" y="120" width="110" height="110"/>
+                                <rect key="frame" x="16" y="170" width="110" height="110"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="110" id="f58-CF-bEI"/>
                                     <constraint firstAttribute="width" constant="110" id="jVz-Si-AET"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Devslopes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GB6-4W-xXQ">
-                                <rect key="frame" x="134" y="171.5" width="127" height="37"/>
+                                <rect key="frame" x="134" y="221.5" width="127" height="37"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -42,7 +54,7 @@
                                 </variation>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="0e3-2q-5GM" userLabel="ButtonsStackView">
-                                <rect key="frame" x="508" y="161.5" width="236" height="57"/>
+                                <rect key="frame" x="508" y="211.5" width="236" height="57"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0LI-7i-Kn1">
                                         <rect key="frame" x="0.0" y="0.0" width="58" height="57"/>
@@ -60,7 +72,7 @@
                                 <variation key="heightClass=regular-widthClass=compact"/>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="tLj-nm-TmV" userLabel="CardStackView">
-                                <rect key="frame" x="24" y="268.5" width="720" height="250"/>
+                                <rect key="frame" x="24" y="318.5" width="720" height="250"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Data Image" translatesAutoresizingMaskIntoConstraints="NO" id="2X4-bE-uh5">
                                         <rect key="frame" x="0.0" y="0.0" width="347.5" height="250"/>
@@ -81,7 +93,7 @@
                                 <variation key="heightClass=regular-widthClass=regular" spacing="25"/>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="rAs-lb-uCO" userLabel="CardStackView">
-                                <rect key="frame" x="24" y="543.5" width="720" height="250"/>
+                                <rect key="frame" x="24" y="593.5" width="720" height="250"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Videos Image" translatesAutoresizingMaskIntoConstraints="NO" id="Id8-bV-wyo">
                                         <rect key="frame" x="0.0" y="0.0" width="347.5" height="250"/>
@@ -102,7 +114,7 @@
                                 <variation key="heightClass=regular-widthClass=regular" spacing="25"/>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T9L-Ga-H9O" customClass="CustomizeButton" customModule="dev_profile" customModuleProvider="target">
-                                <rect key="frame" x="222" y="870.5" width="325" height="50"/>
+                                <rect key="frame" x="222" y="920.5" width="325" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="325" id="8YA-eX-PVR"/>
@@ -137,6 +149,7 @@
                             <constraint firstAttribute="trailing" secondItem="rAs-lb-uCO" secondAttribute="trailing" constant="24" id="lQn-Sp-TgP"/>
                             <constraint firstItem="0e3-2q-5GM" firstAttribute="top" secondItem="2Qh-fL-fc7" secondAttribute="bottom" constant="24" id="mcw-AG-2kQ"/>
                             <constraint firstItem="2Qh-fL-fc7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="pjC-LR-wRw"/>
+                            <constraint firstItem="2Qh-fL-fc7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="qRU-aU-W1r"/>
                             <constraint firstItem="T9L-Ga-H9O" firstAttribute="top" secondItem="rAs-lb-uCO" secondAttribute="bottom" constant="77" id="sIN-40-YCZ"/>
                             <constraint firstItem="BlF-3p-kek" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tDy-u2-N2b"/>
                         </constraints>
@@ -146,6 +159,7 @@
                                 <exclude reference="T9L-Ga-H9O"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="qRU-aU-W1r"/>
                                 <exclude reference="LlD-LR-EXO"/>
                                 <exclude reference="0G3-8A-1Ha"/>
                                 <exclude reference="6dp-W8-tqU"/>
@@ -159,6 +173,8 @@
                                 <include reference="T9L-Ga-H9O"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="pjC-LR-wRw"/>
+                                <include reference="qRU-aU-W1r"/>
                                 <include reference="LlD-LR-EXO"/>
                                 <exclude reference="Wzm-7n-XoF"/>
                                 <include reference="0G3-8A-1Ha"/>
